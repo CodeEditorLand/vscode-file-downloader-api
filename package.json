@@ -1,36 +1,51 @@
 {
-    "name": "@microsoft/vscode-file-downloader-api",
-    "version": "1.0.1",
-    "description": "Wrapper package for the VS Code File Downloader extension",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/microsoft/vscode-file-downloader-api.git"
-    },
-    "files": [
-        "out/*",
-        "CODE_OF_CONDUCT.md",
-        "LICENSE.md",
-        "README.md",
-        "SECURITY.md"
-    ],
-    "main": "./out/index.js",
-    "scripts": {
-        "compile": "tsc -p ./",
-        "lint": "eslint src --ext ts",
-        "prepublish": "npm run compile"
-    },
-    "author": "mindaro",
-    "license": "MIT",
-    "devDependencies": {
-        "@types/node": "20.8.9",
-        "@types/vscode": "1.83.1",
-        "@typescript-eslint/eslint-plugin": "6.9.0",
-        "@typescript-eslint/parser": "6.9.0",
-        "eslint": "8.52.0",
-        "eslint-plugin-import": "2.29.0",
-        "eslint-plugin-jsdoc": "46.8.2",
-        "eslint-plugin-prefer-arrow": "1.2.3",
-        "typescript": "5.2.2",
-        "lodash": "4.17.21"
-    }
+  "name": "@microsoft/vscode-file-downloader-api",
+  "version": "0.0.1",
+  "description": "Wrapper package for the VS Code File Downloader extension",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeEditorLand/CodeEditorLand.git"
+  },
+  "files": [
+    "out/*",
+    "CODE_OF_CONDUCT.md",
+    "LICENSE.md",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "main": "./out/index.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "prepublish": "npm run compile",
+    "prepublishOnly": "TypeScriptESBuild Source/**/*.ts"
+  },
+  "author": {
+    "name": "Nikola Hristov",
+    "email": "nikola@nikolahristov.tech",
+    "url": "https://nikolahristov.tech"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.8.9",
+    "@types/vscode": "1.83.1",
+    "@typescript-eslint/eslint-plugin": "6.9.0",
+    "@typescript-eslint/parser": "6.9.0",
+    "eslint": "8.52.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-jsdoc": "46.8.2",
+    "eslint-plugin-prefer-arrow": "1.2.3",
+    "typescript": "5.2.2",
+    "lodash": "4.17.21",
+    "typescript-esbuild": "0.3.1"
+  },
+  "homepage": "https://github.com/CodeEditorLand/CodeEditorLand#readme",
+  "bugs": {
+    "url": "https://github.com/CodeEditorLand/CodeEditorLand/issues"
+  },
+  "type": "module",
+  "private": "false",
+  "publishConfig": {
+    "access": "public"
+  }
 }
