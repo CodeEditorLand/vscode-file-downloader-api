@@ -1,11 +1,25 @@
 {
   "name": "@microsoft/vscode-file-downloader-api",
   "version": "0.0.1",
+  "private": "false",
   "description": "Wrapper package for the VS Code File Downloader extension",
+  "homepage": "https://github.com/CodeEditorLand/CodeEditorLand#readme",
+  "bugs": {
+    "url": "https://github.com/CodeEditorLand/CodeEditorLand/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeEditorLand/CodeEditorLand.git"
   },
+  "license": "MIT",
+  "author": {
+    "name": "Nikola Hristov",
+    "email": "nikola@nikolahristov.tech",
+    "url": "https://nikolahristov.tech"
+  },
+  "publisher": "playform",
+  "type": "module",
+  "main": "./out/index.js",
   "files": [
     "out/*",
     "CODE_OF_CONDUCT.md",
@@ -13,19 +27,12 @@
     "README.md",
     "SECURITY.md"
   ],
-  "main": "./out/index.js",
   "scripts": {
     "compile": "tsc -p ./",
     "lint": "eslint src --ext ts",
-    "prepublish": "npm run compile",
-    "prepublishOnly": "TypeScriptESBuild Source/**/*.ts"
+    "prepublishOnly": "TypeScriptESBuild Source/**/*.ts",
+    "prepublish": "npm run compile"
   },
-  "author": {
-    "name": "Nikola Hristov",
-    "email": "nikola@nikolahristov.tech",
-    "url": "https://nikolahristov.tech"
-  },
-  "license": "MIT",
   "devDependencies": {
     "@types/node": "20.8.9",
     "@types/vscode": "1.83.1",
@@ -35,16 +42,10 @@
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-jsdoc": "46.8.2",
     "eslint-plugin-prefer-arrow": "1.2.3",
-    "typescript": "5.2.2",
     "lodash": "4.17.21",
+    "typescript": "5.2.2",
     "typescript-esbuild": "0.3.1"
   },
-  "homepage": "https://github.com/CodeEditorLand/CodeEditorLand#readme",
-  "bugs": {
-    "url": "https://github.com/CodeEditorLand/CodeEditorLand/issues"
-  },
-  "type": "module",
-  "private": "false",
   "publishConfig": {
     "access": "public"
   }
