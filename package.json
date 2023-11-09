@@ -1,52 +1,36 @@
 {
-	"name": "@microsoft/vscode-file-downloader-api",
-	"version": "0.0.1",
-	"private": "false",
-	"description": "Wrapper package for the VS Code File Downloader extension",
-	"homepage": "https://github.com/CodeEditorLand/CodeEditorLand#readme",
-	"bugs": {
-		"url": "https://github.com/CodeEditorLand/CodeEditorLand/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/CodeEditorLand/CodeEditorLand.git"
-	},
-	"license": "MIT",
-	"author": {
-		"name": "Nikola Hristov",
-		"email": "nikola@nikolahristov.tech",
-		"url": "https://nikolahristov.tech"
-	},
-	"publisher": "playform",
-	"type": "module",
-	"main": "./out/index.js",
-	"files": [
-		"out/*",
-		"CODE_OF_CONDUCT.md",
-		"LICENSE.md",
-		"README.md",
-		"SECURITY.md"
-	],
-	"scripts": {
-		"compile": "tsc -p ./",
-		"lint": "eslint src --ext ts",
-		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
-		"prepublish": "npm run compile"
-	},
-	"devDependencies": {
-		"@types/node": "20.8.9",
-		"@types/vscode": "1.83.1",
-		"@typescript-eslint/eslint-plugin": "6.9.0",
-		"@typescript-eslint/parser": "6.9.0",
-		"eslint": "8.52.0",
-		"eslint-plugin-import": "2.29.0",
-		"eslint-plugin-jsdoc": "46.8.2",
-		"eslint-plugin-prefer-arrow": "1.2.3",
-		"lodash": "4.17.21",
-		"typescript": "5.2.2",
-		"typescript-esbuild": "0.3.1"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+    "name": "@microsoft/vscode-file-downloader-api",
+    "version": "1.0.1",
+    "description": "Wrapper package for the VS Code File Downloader extension",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/vscode-file-downloader-api.git"
+    },
+    "files": [
+        "out/*",
+        "CODE_OF_CONDUCT.md",
+        "LICENSE.md",
+        "README.md",
+        "SECURITY.md"
+    ],
+    "main": "./out/index.js",
+    "scripts": {
+        "compile": "tsc -p ./",
+        "lint": "eslint src --ext ts",
+        "prepublish": "npm run compile"
+    },
+    "author": "mindaro",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^12.8.1",
+        "@types/vscode": "^1.41.0",
+        "@typescript-eslint/eslint-plugin": "^3.4.0",
+        "@typescript-eslint/parser": "^3.4.0",
+        "eslint": "^7.3.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-jsdoc": "^25.4.1",
+        "eslint-plugin-prefer-arrow": "^1.2.1",
+        "typescript": "^3.5.3",
+        "lodash": "^4.17.19"
+    }
 }
