@@ -21,9 +21,9 @@
     "prepublish": "npm run compile"
   },
   "devDependencies": {
-    "@types/node": "^12.8.1",
-    "@types/vscode": "^1.41.0",
-    "lodash": "^4.17.19",
-    "typescript": "^3.5.3"
+    "@types/node": "12.8.1",
+    "@types/vscode": "1.41.0",
+    "lodash": "4.17.19",
+    "typescript": "3.5.3"
   }
 }
