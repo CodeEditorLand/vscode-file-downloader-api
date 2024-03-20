@@ -1,36 +1,44 @@
 {
-    "name": "@microsoft/vscode-file-downloader-api",
-    "version": "1.0.2",
-    "description": "Wrapper package for the VS Code File Downloader extension",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/microsoft/vscode-file-downloader-api.git"
-    },
-    "files": [
-        "out/*",
-        "CODE_OF_CONDUCT.md",
-        "LICENSE.md",
-        "README.md",
-        "SECURITY.md"
-    ],
-    "main": "./out/index.js",
-    "scripts": {
-        "compile": "tsc -p ./",
-        "lint": "eslint src --ext ts",
-        "prepublish": "npm run compile"
-    },
-    "author": "mindaro",
-    "license": "MIT",
-    "devDependencies": {
-        "@types/node": "20.11.30",
-        "@types/vscode": "1.87.0",
-        "@typescript-eslint/eslint-plugin": "7.3.1",
-        "@typescript-eslint/parser": "7.3.1",
-        "eslint": "8.57.0",
-        "eslint-plugin-import": "2.29.1",
-        "eslint-plugin-jsdoc": "48.2.1",
-        "eslint-plugin-prefer-arrow": "1.2.3",
-        "typescript": "5.4.2",
-        "lodash": "4.17.21"
-    }
+	"name": "@microsoft/vscode-file-downloader-api",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Wrapper package for the VS Code File Downloader extension",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "./out/index.js",
+	"files": [
+		"out/*",
+		"CODE_OF_CONDUCT.md",
+		"LICENSE.md",
+		"README.md",
+		"SECURITY.md"
+	],
+	"scripts": {
+		"compile": "tsc -p ./",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"prepublish": "npm run compile"
+	},
+	"devDependencies": {
+		"@types/node": "20.11.30",
+		"@types/vscode": "1.87.0",
+		"lodash": "4.17.21",
+		"typescript": "5.4.2",
+		"typescript-esbuild": "latest"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
