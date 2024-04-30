@@ -1,36 +1,46 @@
 {
-    "name": "@microsoft/vscode-file-downloader-api",
-    "version": "1.0.2",
-    "description": "Wrapper package for the VS Code File Downloader extension",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/microsoft/vscode-file-downloader-api.git"
-    },
-    "files": [
-        "out/*",
-        "CODE_OF_CONDUCT.md",
-        "LICENSE.md",
-        "README.md",
-        "SECURITY.md"
-    ],
-    "main": "./out/index.js",
-    "scripts": {
-        "compile": "tsc -p ./",
-        "lint": "eslint src --ext ts",
-        "prepublish": "npm run compile"
-    },
-    "author": "mindaro",
-    "license": "MIT",
-    "devDependencies": {
-        "@types/node": "^12.8.1",
-        "@types/vscode": "^1.41.0",
-        "@typescript-eslint/eslint-plugin": "^3.4.0",
-        "@typescript-eslint/parser": "^3.4.0",
-        "eslint": "^7.3.1",
-        "eslint-plugin-import": "^2.20.2",
-        "eslint-plugin-jsdoc": "^25.4.1",
-        "eslint-plugin-prefer-arrow": "^1.2.1",
-        "typescript": "^3.5.3",
-        "lodash": "^4.17.19"
-    }
+	"name": "@microsoft/vscode-file-downloader-api",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Wrapper package for the VS Code File Downloader extension",
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandFileDownloaderApi#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandFileDownloaderApi/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandFileDownloaderApi.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
+	},
+	"type": "module",
+	"main": "./out/index.js",
+	"files": [
+		"out/*",
+		"CODE_OF_CONDUCT.md",
+		"LICENSE.md",
+		"README.md",
+		"SECURITY.md"
+	],
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"compile": "tsc -p ./",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
+	"devDependencies": {
+		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6",
+		"@types/node": "^12.8.1",
+		"lodash": "^4.17.19"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
