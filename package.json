@@ -13,7 +13,7 @@
 		"compile": "tsc -p ./"
 	},
 	"devDependencies": {
-		"@types/node": "^20.14.8",
-		"lodash": "^4.17.21"
+		"@types/node": "20.14.8",
+		"lodash": "4.17.21"
 	}
 }
