@@ -1,7 +1,9 @@
 {
-	"name": "@microsoft/vscode-file-downloader-api",
 	"description": "Wrapper package for the VS Code File Downloader extension",
-	"main": "./out/index.js",
+	"devDependencies": {
+		"@types/node": "^12.8.1",
+		"lodash": "^4.17.19"
+	},
 	"files": [
 		"out/*",
 		"CODE_OF_CONDUCT.md",
@@ -9,11 +11,9 @@
 		"README.md",
 		"SECURITY.md"
 	],
+	"main": "./out/index.js",
+	"name": "@microsoft/vscode-file-downloader-api",
 	"scripts": {
 		"compile": "tsc -p ./"
-	},
-	"devDependencies": {
-		"@types/node": "^12.8.1",
-		"lodash": "^4.17.19"
 	}
 }
