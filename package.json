@@ -1,7 +1,7 @@
 {
 	"description": "Wrapper package for the VS Code File Downloader extension",
 	"devDependencies": {
-		"@types/node": "22.4.0",
+		"@types/node": "22.5.0",
 		"lodash": "4.17.21"
 	},
 	"files": [
