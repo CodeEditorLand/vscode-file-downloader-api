@@ -22,7 +22,7 @@ Place the following in your VS Code extension's `package.json` file:
 ]
 ```
 
-## Usage
+## 🛠️ Usage
 
 To get the API:
 
