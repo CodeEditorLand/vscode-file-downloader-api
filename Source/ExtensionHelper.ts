@@ -13,6 +13,7 @@ export default class ExtensionHelper {
 			const extension = vscode.extensions.getExtension(
 				`mindaro-dev.file-downloader`,
 			);
+
 			if (extension == null) {
 				throw new Error(
 					`Failed to get File Downloader VS Code extension.`,
