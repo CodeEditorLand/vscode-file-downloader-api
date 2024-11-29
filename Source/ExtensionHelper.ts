@@ -19,11 +19,14 @@ export default class ExtensionHelper {
 					`Failed to get File Downloader VS Code extension.`,
 				);
 			}
+
 			this._extension = extension;
 		}
+
 		if (!this._extension.isActive) {
 			await this._extension.activate();
 		}
+
 		return this._extension.exports;
 	}
 }
