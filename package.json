@@ -1,15 +1,7 @@
 {
-	"dependencies": {},
+	"name": "@codeeditorland/file-downloader-api",
 	"description": "Wrapper package for the VS Code File Downloader extension",
-	"devDependencies": {
-		"@types/node": "^12.8.1",
-		"eslint": "^7.3.1",
-		"eslint-plugin-import": "^2.20.2",
-		"eslint-plugin-jsdoc": "^25.4.1",
-		"eslint-plugin-prefer-arrow": "^1.2.1",
-		"lodash": "^4.17.19",
-		"typescript": "^3.5.3"
-	},
+	"main": "./out/index.js",
 	"files": [
 		"out/*",
 		"CODE_OF_CONDUCT.md",
@@ -17,9 +9,12 @@
 		"README.md",
 		"SECURITY.md"
 	],
-	"main": "./out/index.js",
-	"name": "@codeeditorland/file-downloader-api",
 	"scripts": {
 		"compile": "tsc -p ./"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^12.8.1",
+		"lodash": "^4.17.19"
 	}
 }
